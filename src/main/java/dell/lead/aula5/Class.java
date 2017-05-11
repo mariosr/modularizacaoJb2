@@ -33,6 +33,8 @@ import javafx.stage.Stage;
 @SuppressWarnings("restriction")
 public class Class extends Application {
 
+	public static final String title = "JavaFx";
+	
 	public static void main(String[] args) {
 		launch();
 	}
@@ -45,8 +47,8 @@ public class Class extends Application {
 	public void controllers(Stage palco) {
 
 		VBox raiz = new VBox(10); // 1
-		raiz.setTranslateX(5);
-		raiz.setTranslateY(5);
+		raiz.setTranslateX(2);
+		raiz.setTranslateY(2);
 
 		Label rotuloDemo = new Label("TEXTO TESTE"); // 3
 		rotuloDemo.setTooltip(new Tooltip("Esse é um rótulo para mostrar textos de forma simples")); // 4
@@ -101,7 +103,7 @@ public class Class extends Application {
 				chkMoraSozinho, chkCasado, chkPet, hbSo, separadorHorizontal2, opcoes, hbBt);
 
 		Scene cena = new Scene(raiz, 400, 345);
-		palco.setTitle("AULA JAVA BÁSICO II");
+		palco.setTitle(title);
 		palco.setScene(cena);
 		palco.show();
 	}
@@ -120,7 +122,7 @@ public class Class extends Application {
 		BorderPane.setAlignment(lblBaixo, Pos.CENTER);
 
 		Scene cena = new Scene(borderPane, 250, 150);
-		palco.setTitle("JAVA BÁSICO II");
+		palco.setTitle(title);
 		palco.setScene(cena);
 		palco.show();
 	}
@@ -140,7 +142,7 @@ public class Class extends Application {
 		gridPane.setAlignment(Pos.CENTER);
 
 		Scene cena = new Scene(gridPane, 250, 150);
-		palco.setTitle("JAVA BÁSICO II");
+		palco.setTitle(title);
 		palco.setScene(cena);
 		palco.show();
 
@@ -159,7 +161,7 @@ public class Class extends Application {
 		}
 
 		Scene cena = new Scene(flowPane, 250, 150);
-		palco.setTitle("JAVA BÁSICO II");
+		palco.setTitle(title);
 		palco.setScene(cena);
 		palco.show();
 
@@ -196,7 +198,7 @@ public class Class extends Application {
 		painelEmpilhador.getChildren().addAll(retangulo, losango, circulo, arco);
 
 		Scene cena = new Scene(painelEmpilhador, 250, 150);
-		palco.setTitle("JAVA BÁSICO II");
+		palco.setTitle(title);
 		palco.setScene(cena);
 		palco.show();
 
@@ -225,7 +227,7 @@ public class Class extends Application {
 		caixaHorizontal.getChildren().addAll(retanguloRosa, retanguloLimao, retanguloChocolate);
 
 		Scene cena = new Scene(caixaHorizontal, 250, 150);
-		palco.setTitle("JAVA BÁSICO II");
+		palco.setTitle(title);
 		palco.setScene(cena);
 		palco.show();
 
@@ -254,7 +256,7 @@ public class Class extends Application {
 		caixaVertical.getChildren().addAll(retanguloRosa, retanguloLimao, retanguloChocolate);
 
 		Scene cena = new Scene(caixaVertical, 250, 150);
-		palco.setTitle("JAVA BÁSICO II");
+		palco.setTitle(title);
 		palco.setScene(cena);
 		palco.show();
 
