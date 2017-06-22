@@ -41,7 +41,8 @@ public class Class extends Application {
 
 	@Override
 	public void start(Stage palco) throws Exception {
-		controllers(palco);
+		//controllers(palco);
+		stack(palco);
 	}
 
 	public void controllers(Stage palco) {
